@@ -1,16 +1,15 @@
 package com.example.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
     String dogUrl = "https://i.imgur.com/tGbaZCY.jpg";
     String myDog = "https://i.ibb.co/HTz9FwJ/dog.jpg";
     String catUrl = "https://cdn2.thecatapi.com/images/au.jpg";
