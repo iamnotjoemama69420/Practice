@@ -48,7 +48,6 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
         // Create a new view, which defines the UI of the list item
         View view = LayoutInflater.from(viewGroup.getContext())
                 .inflate(R.layout.recyclerview_inflation, viewGroup, false);
-
         return new ViewHolder(view);
     }
 
