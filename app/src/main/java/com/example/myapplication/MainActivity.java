@@ -2,7 +2,9 @@ package com.example.myapplication;
 
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -35,6 +37,14 @@ public class MainActivity extends Activity {
             Glide.with(MainActivity.this).load(text).placeholder(R.drawable.ic_baseline_assignment_late_24).circleCrop().into(imageView);
         });
         Glide.with(this).load(dogUrl).circleCrop().into(imageView);
+        Button move_bt = findViewById(R.id.movebt);
+        move_bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ListActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 
