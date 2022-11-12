@@ -18,6 +18,10 @@ public class ListActivity extends Activity {
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
+        /* Bundle bundle = new Bundle();
+bundle.putString("", "");
+ */
+
 //hw think of ways to pass data to next page
         //keep some of the data by getting a value from the recycleView in a variable and use intent to send data to next activity
     }

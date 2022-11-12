@@ -23,6 +23,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //Bundle bundle = intent.getBundleExtra("Bundle");
         imageView = findViewById(R.id.e);
         Button dog1 = findViewById(R.id.myDog);
         Button dog2 = findViewById(R.id.dogurl);
